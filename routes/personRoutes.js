@@ -19,9 +19,9 @@ router.post('/', async (req, res) => {
 
 router.get('/', async (req, res) => {
     try{
-        const data = await Person.find();
+        // const data = await Person.find();
         console.log('data fetched');
-        res.status(200).json(data);
+        res.status(200).json("successfull login");
     } catch {
         console.log(err);
         res.status(500).json('Internal Server Error')
